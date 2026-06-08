@@ -22,7 +22,7 @@ public class BasicItemController {
         List<Item> items = itemRepository.findAll();
         model.addAttribute("items", items);
 
-        return "/basic/item";
+        return "basic/items";
     }
 
     @PostConstruct
